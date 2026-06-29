@@ -9,6 +9,7 @@ body{
     background-color: #fff;
     color: #1a1033;
     overflow-x: hidden;
+    background-color: #1a1033;
 }
 nav{
     display: flex;

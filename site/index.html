@@ -15,7 +15,7 @@
         </div>
         <ul class="nav-links">
             <li><a href="">Home</a></li>
-            <li><a href="">Cardápio</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
             <li><a href="">Sobre Nós</a></li>
         </ul>
         <div class="nav-actions">
@@ -84,7 +84,7 @@
             </div>
         </div>
     </div>
-    <div class="cardapio">
+    <div class="cardapio" id="cardapio">
         <h2 class="cardapio-title">Cardápio</h2>
         <div class="carousel-wrapper">
             <div class="carousel-track-outer">
@@ -171,6 +171,18 @@
             <a href=""><img src="imagens/fotos/Redes/facebook-48.png" alt="Facebook"></a>
         </div>
     </footer>
+
+    <script>
+        const track = document.getElementById('carouselTrack')
+        const prevBtn = document.getElementById('prevBtn')
+        const nextBtn = document.getElementById('nextBtn')
+        const dotwrap = document.getElementById('carouselDots')
+        const cards = track.querySelectorAll('.card')
+        const visible = () => window.innerWidth < 768 ? 1 : 3
+
+        let current = 0
+        const total = () => cards.length - visible() + 1
+    </script>
 
 </body>
 
